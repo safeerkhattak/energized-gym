@@ -41,11 +41,16 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="relative h-screen flex items-center justify-center">
-        <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-red-900/20"></div>
-        <div className="absolute inset-0 bg-[url('/img/gym-interior-3.jpg')] bg-cover bg-center opacity-30"></div>
+    
+    <section id="home" className="relative h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-red-900/20 z-20"></div>
+        <img 
+          src="/img/workout Area_1.png" 
+          alt="Workout Area Background"
+          className="absolute inset-0 w-full h-full object-cover opacity-90 z-10"
+        />
         
-        <div className="relative z-10 text-center max-w-4xl mx-auto px-4">
+        <div className="relative z-30 text-center max-w-4xl mx-auto px-4">
           <h1 className="text-6xl md:text-8xl font-bold mb-6 animate-fade-in">
             <span className="block">TRANSFORM</span>
             <span className="block bg-gradient-to-r from-red-500 to-orange-500 bg-clip-text text-transparent">
@@ -65,7 +70,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-gray-400 rounded-full flex justify-center">
             <div className="w-1 h-3 bg-gray-400 rounded-full mt-2 animate-pulse"></div>
@@ -73,6 +77,7 @@ export default function Home() {
         </div>
       </section>
 
+       
       {/* About Section */}
       <section id="about" className="py-20 bg-gradient-to-b from-black to-gray-900">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
